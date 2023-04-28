@@ -1,17 +1,6 @@
-trigger:
-- main
-
-pool:
-  vmImage: CICDPipelinePool
-
 steps:
-- task: Maven@3
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
   inputs:
-    mavenPomFile: 'webautomation/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '9.0.4'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: succeededOrFailed()

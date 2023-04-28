@@ -1,12 +1,17 @@
-steps:
-- task: ExtractFiles@1
-  inputs:
-    archiveFilePatterns: '*.zip'
-    destinationFolder: '$(Build.SourcesDirectory)'
-    cleanDestinationFolder: false
+trigger:
+- main
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
+pool:
+  vmImage: CICDPipelinePool
+
+steps:
+- task: Maven@3
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-  condition: succeededOrFailed()
+    mavenPomFile: 'webautomation/pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '9.0.4'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'

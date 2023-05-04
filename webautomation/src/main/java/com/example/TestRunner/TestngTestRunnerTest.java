@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions
 
 (
-	// features ="classpath:feature",
-		   features ="classpath:feature/01SignUp.feature",
-		/// features ="classpath:feature/02MyProfile.feature",
+	features ="classpath:feature",
+		//    features ="classpath:feature/01SignUp.feature",
+		//  features ="classpath:feature/02MyProfile.feature",
 		//  features ="classpath:feature/03ProfileVerification.feature",
 		// features ="classpath:feature/04Ecom.feature",
 		// features ="classpath:feature/05MyOrder.feature",
@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
  
 glue="com.example.StepDefinitions",
 monochrome=false,
- tags="@Run",
+//  tags="@Run",
 //////glue="stepDefinitions",stepNotifications=true,tags="@SmokeTest or @RegressionTest",
 //glue="stepDefinitions",stepNotifications=true,tags="@SmokeTest and @RegressionTest",
 //glue="stepDefinitions",stepNotifications=true,tags="not @SanityTest"

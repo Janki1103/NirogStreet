@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionSuite</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 28 14:40:07 IST 2023</td>
+<td>Started on:</td><td>Thu May 04 12:54:48 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>134 seconds (134182 ms)</td>
+<tr><td>Total time:</td><td>154 seconds (154644 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,42 +67,17 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.TestRunner.TestngTestRunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.example.TestRunner.TestngTestRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify add to cart flow with pay on delivery option", "Optional[Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny and Coupon verfication in the cart]"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation=&apos;medicine-size-options&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.example.Utilities.GenericUtils.verifyVisibility(GenericUtils.java:1330)
-	at com.example.PageObjects.AddToCart.selectSizeOfProduct(AddToCart.java:149)
-	at com.example.StepDefinitions.EcomSteps.user_select_the_size_of_the_product(EcomSteps.java:63)
-	at ?.User Select the size of the product(classpath:feature/04Ecom.feature:13)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2018545259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2018545259'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation=&apos;medicine-size-options&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.example.Utilities.GenericUtils.verifyVisibility(GenericUtils.java:1330)
-	at com.example.PageObjects.AddToCart.selectSizeOfProduct(AddToCart.java:149)
-	at com.example.StepDefinitions.EcomSteps.user_select_the_size_of_the_product(EcomSteps.java:63)
-	at ?.User Select the size of the product(classpath:feature/04Ecom.feature:13)
-</pre></div></td>
-<td>131</td>
+<td title='com.example.TestRunner.TestngTestRunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.example.TestRunner.TestngTestRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test the Mobile Number  Update in Personal Detail Section", "Optional[Doctor my profile - Process of add operations for all details]"</td>
+<td></td>
+<td>152</td>
 <td>com.example.TestRunner.TestngTestRunnerTest@909217e</td></tr>
 </table><p>
 </body>

@@ -186,6 +186,7 @@ public class GenericUtils extends TestBase {
 	        }
 	
 		}
+		
 	public void clickOnElementForOTP(String locator) {
 		
 		getWait().until(ExpectedConditions.elementToBeClickable(getElement(locator)));
@@ -1378,7 +1379,11 @@ public class GenericUtils extends TestBase {
 			
 		}
 	
-	
+		public void getText(String locators){
+			String text = getElement(locators).getText();
+			System.out.println(text);
+
+		}
 	}
 
 	

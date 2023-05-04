@@ -131,21 +131,23 @@ public void enterOTPTwo(String OTPTwo)
     public void enteOTPFour(String OTPFour){
 
         enterText(locators.getKey( "OTPFour"), OTPFour);
+        // wait(2000);
         
     }
 
     public void clickOnProceed(){
         verifyVisibility(locators.getKey("OTProceedButton"));
         clickOnElement(locators.getKey("OTProceedButton"));
-
        // clickOnElement(String.format(locators.getKey("OTProceedButton")));
         System.out.println("Proceed Button Clicked!!");
+        getText(locators.getKey("OTProceedButton"));
         log.info("STEP:Click on procced button Successfully" + "OTProceedButton");
 
     }
 
     public void verifyCongratulationPopUp(String actualMessage)
     {
+        //wait(5000);
         verifyVisibility(locators.getKey("congratulationsHeder"));
        // verifyTextForCongrtualtionsPopup(locators.getKey("congratulationsHeder"), actualMessage);
         verifyText(locators.getKey("congratulationsHeder"), actualMessage);

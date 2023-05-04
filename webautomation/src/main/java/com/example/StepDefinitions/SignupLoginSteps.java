@@ -150,6 +150,8 @@ public void validate_the_browser() throws IOException {
     genericUtils=new GenericUtils();
    
     genericUtils.initBrowser(ApplicationConstants.browser, ApplicationConstants.URL);
+ 
+
 }
 
 @Given("^User should be logged in with (.+) as a mobile number and add OTP As (.+) (.+) (.+) (.+)$")

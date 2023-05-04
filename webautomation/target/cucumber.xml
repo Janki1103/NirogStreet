@@ -1,47 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="131.836">
-    <testcase classname="Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny and Coupon verfication in the cart" name="Verify add to cart flow with pay on delivery option" time="130.792">
-        <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation='medicine-size-options'])[1] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3" type="org.openqa.selenium.TimeoutException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="152.778">
+    <testcase classname="Doctor my profile - Process of add operations for all details" name="Test the Mobile Number  Update in Personal Detail Section" time="151.888">
+        <system-out>
             <![CDATA[Given Validate the browser..................................................passed
-Given User should be logged in with 8530906851 as a mobile number and add OTP As 1 2 3 4.passed
-When User verify the cart...................................................passed
-When User click on all medicine menu and search the brand as 1Veda..........passed
-When User open the product..................................................passed
-When User click on bookmark icon............................................passed
-When User Select the size of the product....................................failed
-When User Enter the quantity of product as 1................................skipped
-When user click on add to cart button.......................................skipped
-When User click on change Pincode and click on add new address..............skipped
-When User enter full name as a Janki Bhatt,Mobile Number as a 8530906851,Alternative Mobile NUmber as a 9974580345,Address as a 12/141,jamnagar , Landmark as a Vedant School of Science,pincode as a 560068.skipped
-When User click on save address button......................................skipped
-When User click on continue shopping and verify succesfull message as Successfully added to cart.skipped
-When User search the product as Giloy Juice.................................skipped
-When User Select the size of the product....................................skipped
-When User Enter the quantity of product as 1................................skipped
-When user click on add to cart button.......................................skipped
-When User verify succesfull message as Successfully added to cart...........skipped
-When User remove address....................................................skipped
-When User click on cart and procced for checkout............................skipped
-When User select pay on deleivery option....................................skipped
-When User click on Pay Now button...........................................skipped
-When User enter OTP As 1 2 3 4..............................................skipped
-Then user click on Confirm Order and verify the confirm order message as Order Confirmed.skipped
-Then closes the browser.....................................................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation='medicine-size-options'])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.example.Utilities.GenericUtils.verifyVisibility(GenericUtils.java:1330)
-	at com.example.PageObjects.AddToCart.selectSizeOfProduct(AddToCart.java:149)
-	at com.example.StepDefinitions.EcomSteps.user_select_the_size_of_the_product(EcomSteps.java:63)
-	at ✽.User Select the size of the product(classpath:feature/04Ecom.feature:13)
+Given User click on loginsignup button......................................passed
+Given User should be able to click on i have account button.................passed
+Then User clicks on Login with Password button..............................passed
+When user enters the mobile number as 8530906851 mobile number..............passed
+When user enters the password as Test@123 password..........................passed
+Then User clicks on proceed button..........................................passed
+Given User click on profile icon............................................passed
+Given User click on mobile edit icon........................................passed
+Given User enter the mobile number as 6530906852 and click on get otp button.passed
+When Popup should come and user can add OTP As 1 2 3 4......................passed
+When User should be able to click on otp proceed button and get mobile number change successfull message as Successfully updated Personal information and Contact details!.passed
+When User Click on personal and contact details tab for update mobile number.passed
+Given User click on mobile edit icon again..................................passed
+Given User enter the mobile number as 8530906851 and click on get otp button.passed
+When Popup should come and user can add OTP As 1 2 3 4......................passed
+When User should be able to click on otp proceed button and get mobile number change successfull message as Successfully updated Personal information and Contact details!.passed
+Then closes the browser.....................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

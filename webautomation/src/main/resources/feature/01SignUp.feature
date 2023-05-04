@@ -18,10 +18,10 @@ Feature: Verify Login and sign up module with SignUp for Doctor,Chemist and Stud
     Then closes the browser
 
     Examples: 
-      | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  |
-      | Doctor     | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
-      | Student    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
-      | Chemist    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
+      | Profession | Title | Name          | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  |
+      | Doctor     | Mrs.  | jayati Pandya |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
+      | Student    | Mrs.  | Payal Davda   |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
+      | Chemist    | Mrs.  | Vidhi Pandya  |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! |
 
   Scenario Outline: Verify login with otp functionality
     Given User click on loginsignup button
@@ -58,7 +58,6 @@ Feature: Verify Login and sign up module with SignUp for Doctor,Chemist and Stud
       | MobileNumber | OtpOne | OtpTwo | OtpThree | OtpFour | setpassword | confirmpassword | SuccessfullyaddnewpasswordToastMessage | Password |
       |   8530906851 |      1 |      2 |        3 |       4 | Test@123    | Test@123        | Successfully added new password        | Test@123 |
 
-
   Scenario Outline: Verify Login with Password functionality
     Given User should be able to click on signup icon and verify the user is on signup page
     When User clicks on I already have an account
@@ -85,7 +84,6 @@ Feature: Verify Login and sign up module with SignUp for Doctor,Chemist and Stud
       | Mobile     | OtpOne | OtpTwo | OtpThree | OtpFour |
       | 8530906851 |      1 |      2 |        3 |       4 |
 
-@Run
   Scenario Outline: Verify change the number functionality
     Given User should be able to click on signup icon and verify the user is on signup page
     When User clicks on I already have an account

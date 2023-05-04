@@ -6,11 +6,10 @@ Feature: Doctor my profile - Process of add operations for all details
   Scenario Outline: Test the Doctor should able to add the details
     Given User click on loginsignup button
     Given User should be able to click on i have account button
-    Given User should be able to enter the number as <Mobile> mobile and click on otp button
-    Given User should be able to click resend otp
-    When User get resend successfull message as <resendSuccessfullyMessage>
-    When user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    When User should be able to click on proceed button
+    Then User clicks on Login with Password button
+    When user enters the mobile number as <Mobile> mobile number
+    When user enters the password as <Password> password
+    Then User clicks on proceed button
     When User click on profile icon
     When User click on change profile picture and upload the profile picture
     When User Select the dropdown and Select the gender<gender>
@@ -68,17 +67,17 @@ Feature: Doctor my profile - Process of add operations for all details
     Then closes the browser
 
     Examples: 
-      | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | SuccessfullyMessage                                            | qualification             | university | passingyear | EducationDetailSaveSuccessfullMessage | UpdateQualification | updateUniversity                             | updatepassingYear | EducationUpdateSuccessfullMessage   | EducationDetailRemovedSuccessfullMessage | services  | serviceSuccessfullMessage    | RemoveServicesSuccessfulyMessage  | specialization | specializationSuccessfullMessage    | removespecialisationsuccessfullmessage   | city      | hospitalorClinicName | from | to   | experienceSuccessfullMessage       | updateCity | updatehospitalorClinicName | updatefrom | updateto | UpdateexperienceSuccessfullMessage   | deleteexperiencemessage              | Awardname   | year | AwardSuccessfullMessage   | AwardRemovedSuccessfullMessage  | membership             | MembershipSuccessfullMessage       | MembershipRemovedSuccessfullMessage  |
-      | 8530906851 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 12-10-1995 | https://stg3web.1veda.in/ | i am doctor | Successfully updated Personal information and Contact details! | B.A.M.S. (Ayurvedacharya) | Gauhati    |        1995 | Successfully added the Education!     | B.A.M.S. & M.D      | Andhra Pradesh University of Health Sciences |              2022 | Successfully updated the Education! | Successfully removed the Education!      | abdominal | Successfully added Services! | Successfully removed the Service! | Accupressure   | Successfully added Specializations! | Successfully removed the Specialization! | ghaziabad | nirogstreet          | 1985 | 1995 | Successfully added the Experience! | delhi      | Hinirog                    |       1990 |     1998 | Successfully updated the Experience! | Successfully removed the Experience! | officeAward | 1992 | Successfully added Award! | Successfully removed the Award! | Nirogstreet membership | Successfully added the Membership! | Successfully removed the Membership! |
+      | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | SuccessfullyMessage                                            | qualification             | university | passingyear | EducationDetailSaveSuccessfullMessage | UpdateQualification | updateUniversity                             | updatepassingYear | EducationUpdateSuccessfullMessage   | EducationDetailRemovedSuccessfullMessage | services  | serviceSuccessfullMessage    | RemoveServicesSuccessfulyMessage  | specialization | specializationSuccessfullMessage    | removespecialisationsuccessfullmessage   | city      | hospitalorClinicName | from | to   | experienceSuccessfullMessage       | updateCity | updatehospitalorClinicName | updatefrom | updateto | UpdateexperienceSuccessfullMessage   | deleteexperiencemessage              | Awardname   | year | AwardSuccessfullMessage   | AwardRemovedSuccessfullMessage  | membership             | MembershipSuccessfullMessage       | MembershipRemovedSuccessfullMessage  |
+      | 8530906851 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 12-10-1995 | https://stg3web.1veda.in/ | i am doctor | Successfully updated Personal information and Contact details! | B.A.M.S. (Ayurvedacharya) | Gauhati    |        1995 | Successfully added the Education!     | B.A.M.S. & M.D      | Andhra Pradesh University of Health Sciences |              2022 | Successfully updated the Education! | Successfully removed the Education!      | abdominal | Successfully added Services! | Successfully removed the Service! | Accupressure   | Successfully added Specializations! | Successfully removed the Specialization! | ghaziabad | nirogstreet          | 1985 | 1995 | Successfully added the Experience! | delhi      | Hinirog                    |       1990 |     1998 | Successfully updated the Experience! | Successfully removed the Experience! | officeAward | 1992 | Successfully added Award! | Successfully removed the Award! | Nirogstreet membership | Successfully added the Membership! | Successfully removed the Membership! |
+
 
   Scenario Outline: Test the Chemist should able to add the details
     Given User click on loginsignup button
     Given User should be able to click on i have account button
-    Given User should be able to enter the number as <Mobile> mobile and click on otp button
-    Given User should be able to click resend otp
-    When User get resend successfull message as <resendSuccessfullyMessage>
-    When user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    When User should be able to click on proceed button
+    Then User clicks on Login with Password button
+    When user enters the mobile number as <Mobile> mobile number
+    When user enters the password as <Password> password
+    Then User clicks on proceed button
     When User click on profile icon
     When User click on change profile picture and upload the profile picture
     When User Select the dropdown and Select the gender<gender>
@@ -91,17 +90,16 @@ Feature: Doctor my profile - Process of add operations for all details
     Then closes the browser
 
     Examples: 
-      | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about        | SuccessfullyMessage                                            |
-      | 8872447855 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am chemist | Successfully updated Personal information and Contact details! |
-@Run
+      | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about        | SuccessfullyMessage                                            |
+      | 8872447855 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am chemist | Successfully updated Personal information and Contact details! |
+  
   Scenario Outline: Test the Student should able to add the details
     Given User click on loginsignup button
     Given User should be able to click on i have account button
-    Given User should be able to enter the number as <Mobile> mobile and click on otp button
-    Given User should be able to click resend otp
-    When User get resend successfull message as <resendSuccessfullyMessage>
-    When user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    When User should be able to click on proceed button
+    Then User clicks on Login with Password button
+    When user enters the mobile number as <Mobile> mobile number
+    When user enters the password as <Password> password
+    Then User clicks on proceed button
     When User click on profile icon
     When User click on change profile picture and upload the profile picture
     When User Select the dropdown and Select the gender<gender>
@@ -136,8 +134,8 @@ Feature: Doctor my profile - Process of add operations for all details
     Then closes the browser
 
     Examples: 
-      | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about        | SuccessfullyMessage                                            | qualification             | university | passingyear | EducationDetailSaveSuccessfullMessage | UpdateQualification | updateUniversity                             | updatepassingYear | EducationUpdateSuccessfullMessage   | EducationDetailRemovedSuccessfullMessage | services  | serviceSuccessfullMessage    | RemoveServicesSuccessfulyMessage  | specialization | specializationSuccessfullMessage    | removespecialisationsuccessfullmessage   | city      | hospitalorClinicName | from | to   | experienceSuccessfullMessage       | updateCity | updatehospitalorClinicName | updatefrom | updateto | UpdateexperienceSuccessfullMessage   | deleteexperiencemessage              | Awardname   | year | AwardSuccessfullMessage   | AwardRemovedSuccessfullMessage  | membership             | MembershipSuccessfullMessage       | MembershipRemovedSuccessfullMessage  |
-      | 9854588410 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 12-10-1995 | https://stg3web.1veda.in/ | i am student | Successfully updated Personal information and Contact details! | B.A.M.S. (Ayurvedacharya) | Gauhati    |        1995 | Successfully added the Education!     | B.A.M.S. & M.D      | Andhra Pradesh University of Health Sciences |              2022 | Successfully updated the Education! | Successfully removed the Education!      | abdominal | Successfully added Services! | Successfully removed the Service! | Accupressure   | Successfully added Specializations! | Successfully removed the Specialization! | ghaziabad | nirogstreet          | 1985 | 1995 | Successfully added the Experience! | delhi      | Hinirog                    |       1990 |     1998 | Successfully updated the Experience! | Successfully removed the Experience! | officeAward | 1992 | Successfully added Award! | Successfully removed the Award! | Nirogstreet membership | Successfully added the Membership! | Successfully removed the Membership! |
+      | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about        | SuccessfullyMessage                                            | qualification             | university | passingyear | EducationDetailSaveSuccessfullMessage | UpdateQualification | updateUniversity                             | updatepassingYear | EducationUpdateSuccessfullMessage   | EducationDetailRemovedSuccessfullMessage | services  | serviceSuccessfullMessage    | RemoveServicesSuccessfulyMessage  | specialization | specializationSuccessfullMessage    | removespecialisationsuccessfullmessage   | city      | hospitalorClinicName | from | to   | experienceSuccessfullMessage       | updateCity | updatehospitalorClinicName | updatefrom | updateto | UpdateexperienceSuccessfullMessage   | deleteexperiencemessage              | Awardname   | year | AwardSuccessfullMessage   | AwardRemovedSuccessfullMessage  | membership             | MembershipSuccessfullMessage       | MembershipRemovedSuccessfullMessage  |
+      | 9854588410 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 12-10-1995 | https://stg3web.1veda.in/ | i am student | Successfully updated Personal information and Contact details! | B.A.M.S. (Ayurvedacharya) | Gauhati    |        1995 | Successfully added the Education!     | B.A.M.S. & M.D      | Andhra Pradesh University of Health Sciences |              2022 | Successfully updated the Education! | Successfully removed the Education!      | abdominal | Successfully added Services! | Successfully removed the Service! | Accupressure   | Successfully added Specializations! | Successfully removed the Specialization! | ghaziabad | nirogstreet          | 1985 | 1995 | Successfully added the Experience! | delhi      | Hinirog                    |       1990 |     1998 | Successfully updated the Experience! | Successfully removed the Experience! | officeAward | 1992 | Successfully added Award! | Successfully removed the Award! | Nirogstreet membership | Successfully added the Membership! | Successfully removed the Membership! |
 
   Scenario Outline: Test the Student Update the Profession from Student to Doctor
     Given User should be able to click on signup icon and verify the user is on signup page
@@ -173,17 +171,16 @@ Feature: Doctor my profile - Process of add operations for all details
     Then closes the browser
 
     Examples: 
-      | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | Congratulations  | Attention  | ROllNo | year | DocumentReview         | AdminUsername | AdminPassword |  | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | councilname                                                                | rajistrationNumber | passingyear |
-      | Student    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       | Congratulations! | Attention! | 123456 | 2020 | Documents under review | superadmin    |        123456 |  | 9876543212 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |             123456 |        1992 |
+      | Profession | Title | Name        | PINCODE | Password  | ConfirmPassword | Congratulations  | Attention  | ROllNo | year | DocumentReview         | AdminUsername | AdminPassword |  | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | councilname                                                                | rajistrationNumber | passingyear |
+      | Student    | Mrs.  | Pooja Joshi |  380013 | Nirog@123 | Nirog@123       | Congratulations! | Attention! | 123456 | 2020 | Documents under review | superadmin    |        123456 |  | 9876543212 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |             123456 |        1992 |
 
   Scenario Outline: Test the Mobile Number  Update in Personal Detail Section
     Given User click on loginsignup button
     Given User should be able to click on i have account button
-    Given User should be able to enter the number as <Mobile> mobile and click on otp button
-    Given User should be able to click resend otp
-    Given User get resend successfull message as <resendSuccessfullyMessage>
-    Given user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    Given User should be able to click on proceed button
+    Then User clicks on Login with Password button
+    When user enters the mobile number as <Mobile> mobile number
+    When user enters the password as <Password> password
+    Then User clicks on proceed button
     Given User click on profile icon
     Given User click on mobile edit icon
     Given User enter the mobile number as <entermobileupdate> and click on get otp button
@@ -197,5 +194,5 @@ Feature: Doctor my profile - Process of add operations for all details
     Then closes the browser
 
     Examples: 
-      | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | entermobileupdate | MobileNumberChangeSuccessfullMessage                           |
-      | 8530906851 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am doctor |        6530906852 | Successfully updated Personal information and Contact details! |
+      | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | entermobileupdate | MobileNumberChangeSuccessfullMessage                           |
+      | 8530906851 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am doctor |        6530906852 | Successfully updated Personal information and Contact details! |

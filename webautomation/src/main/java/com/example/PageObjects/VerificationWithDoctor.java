@@ -242,23 +242,25 @@ public VerificationWithDoctor() throws IOException {
 
     public void uploadcollageID() throws InterruptedException, AWTException{
         PNGfileuploading(locators.getKey("collageid_front_upload"));
-        wait(2000);
+        wait(1000);
         scrollDown150();
         PNGfileuploading(locators.getKey("collageid_back_upload"));
         log.info("STEP:File upload successfully for collage id " + "-" + "collageid_back_upload");
     }
 
     public void clickOnSaveForDocRegister(){
-        wait(2000);
+        wait(1000);
         clickOnElement(locators.getKey("Doc_Reg_Save_button"));
         verifyVisibility(locators.getKey("Reg_Confirm_button"));
         clickOnElement(locators.getKey("Reg_Confirm_button"));
         log.info("STEP:Click on save button successfully " + "-" + "Doc_Reg_Save_button");
+        wait(2000);
     }
 
     public void clickOnSaveForDocRegisterForStudent(){
         verifyVisibility(locators.getKey("Doc_Reg_Save_button"));
         clickOnElement(locators.getKey("Doc_Reg_Save_button"));
+        wait(2000);
         log.info("STEP:Click on save button successfully " + "-" + "Doc_Reg_Save_button");
     }
 
@@ -292,7 +294,7 @@ public VerificationWithDoctor() throws IOException {
         verifyVisibility(locators.getKey("View_Icon"));
         clickOnElement(locators.getKey("View_Icon"));
         scrollDown();
-        verifyVisibility(locators.getKey("View_Icon"));
+        //verifyVisibility(locators.getKey("View_Icon"));
         clickOnElement(locators.getKey("Approve_Radio_Button"));
         acceptAlerts();
         
@@ -352,6 +354,8 @@ public VerificationWithDoctor() throws IOException {
         
         selectDropDown(locators.getKey("Reson_for_dispapprove_input"), reasonofDisapprove);
         clickOnElement(locators.getKey("Submit_button"));
+       
+        verifyVisibility(locators.getKey("Disapproved_Nessage_Admin"));
         
 
     }

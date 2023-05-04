@@ -2,7 +2,7 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
   Background: 
     Given Validate the browser
-
+ @Run
   Scenario Outline: Profile verification with doctor
     Given User should be able to click on signup icon and verify the user is on signup page
     When User should be able to select a profession as <Profession>
@@ -30,8 +30,8 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
     Then closes the browser
 
     Examples: 
-      | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | counil_name                                                                | Registeration_Number | year | DocumentReview         | AdminUsername | AdminPassword |
-      | Doctor     | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |               123456 | 2015 | Documents under review | superadmin    |        123456 |
+      | Profession | Title | Name         | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | counil_name                                                                | Registeration_Number | year | DocumentReview         | AdminUsername | AdminPassword |
+      | Doctor     | Mrs.  | Zeel Agarwal |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |               123456 | 2015 | Documents under review | superadmin    |        123456 |
 
   Scenario Outline: Profile verification with chemist
     Given User should be able to click on signup icon and verify the user is on signup page
@@ -58,7 +58,7 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
     Examples: 
       | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | DocumentType | PanNumber   | DocumentReview         | AdminUsername | AdminPassword | PanCardName |
-      | Chemist    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | PAN          | 41111117485 | Documents under review | superadmin    |        123456 | JANKI BHATT |
+      | Chemist    | Mrs.  | Ayushi Patel |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | PAN          | 41111117485 | Documents under review | superadmin    |        123456 | JANKI BHATT |
 
   Scenario Outline: Profile verification with Student
     Given User should be able to click on signup icon and verify the user is on signup page
@@ -88,8 +88,8 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
     Examples: 
       | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | ROllNo | year | DocumentReview         | AdminUsername | AdminPassword |
-      | Student    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | 123456 | 2020 | Documents under review | superadmin    |        123456 |
-
+      | Student    | Mrs.  | Teena Dave |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | 123456 | 2020 | Documents under review | superadmin    |        123456 |
+ 
   Scenario Outline: Profile Rejection with doctor
     Given User should be able to click on signup icon and verify the user is on signup page
     When User should be able to select a profession as <Profession>
@@ -119,7 +119,7 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
     Examples: 
       | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | counil_name                                                                | Registeration_Number | year | DocumentReview         | AdminUsername | AdminPassword | ReasonOfDisapprove           | Rejection             |
-      | Doctor     | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |                  123 | 2020 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected |
+      | Doctor     | Mrs.  | Keyuri Bhatt |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |                  123 | 2020 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected |
 
   Scenario Outline: Profile Rejection with chemist
     Given User should be able to click on signup icon and verify the user is on signup page
@@ -149,9 +149,9 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
     Examples: 
       | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | DocumentType | PanNumber  | DocumentReview         | AdminUsername | AdminPassword | ReasonOfDisapprove           | Rejection             | PanName     |
-      | Chemist    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | PAN          | 4111111111 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected | JANKI BHATT |
+      | Chemist    | Mrs.  | Komal Khetiya |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | PAN          | 4111111111 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected | JANKI BHATT |
 
-  @Run
+ 
   Scenario Outline: Profile rejection with Student
     Given User should be able to click on signup icon and verify the user is on signup page
     When User should be able to select a profession as <Profession>
@@ -183,4 +183,4 @@ Feature: Verify functionality of profile verification and Rejection for Doctor, 
 
     Examples: 
       | Profession | Title | Name  | PINCODE | Password  | ConfirmPassword | OtpOne | OtpTwo | OtpThree | OtpFour | Congratulations  | Attention  | ROllNo | year | DocumentReview         | AdminUsername | AdminPassword | ReasonOfDisapprove           | Rejection             |
-      | Student    | Mrs.  | janki |  361305 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | 113456 | 2020 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected |
+      | Student    | Mrs.  | Kumud Shah |  380013 | Nirog@123 | Nirog@123       |      1 |      2 |        3 |       4 | Congratulations! | Attention! | 113456 | 2020 | Documents under review | superadmin    |        123456 | Documents & profile mismatch | Verification Rejected |

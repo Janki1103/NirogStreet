@@ -1,68 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-28T14:40:07 IST" name="NS Web Suite" finished-at="2023-04-28T14:42:21 IST" duration-ms="134182">
+  <suite started-at="2023-05-04T12:54:48 IST" name="NS Web Suite" finished-at="2023-05-04T12:57:22 IST" duration-ms="154644">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-28T14:40:07 IST" name="RegressionSuite" finished-at="2023-04-28T14:42:21 IST" duration-ms="134182">
+    <test started-at="2023-05-04T12:54:48 IST" name="RegressionSuite" finished-at="2023-05-04T12:57:22 IST" duration-ms="154644">
       <class name="com.example.TestRunner.TestngTestRunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-04-28T14:40:07 IST" name="setUpClass" finished-at="2023-04-28T14:40:09 IST" duration-ms="2030" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-05-04T12:54:48 IST" name="setUpClass" finished-at="2023-05-04T12:54:49 IST" duration-ms="1582" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@308be1a3]]>
+                <![CDATA[org.testng.TestRunner@34647f58]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-04-28T14:40:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-28T14:42:21 IST" duration-ms="131159" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-05-04T12:54:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:57:22 IST" duration-ms="152125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify add to cart flow with pay on delivery option"]]>
+                <![CDATA["Test the Mobile Number  Update in Personal Detail Section"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny and Coupon verfication in the cart]"]]>
+                <![CDATA["Optional[Doctor my profile - Process of add operations for all details]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation='medicine-size-options'])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@data-automation='medicine-size-options'])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\bhattjan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313fa45cfaebf2c6b8092c22b8e0dce3
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.example.Utilities.GenericUtils.verifyVisibility(GenericUtils.java:1330)
-at com.example.PageObjects.AddToCart.selectSizeOfProduct(AddToCart.java:149)
-at com.example.StepDefinitions.EcomSteps.user_select_the_size_of_the_product(EcomSteps.java:63)
-at ✽.User Select the size of the product(classpath:feature/04Ecom.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-04-28T14:42:21 IST" name="tearDownClass" finished-at="2023-04-28T14:42:21 IST" duration-ms="946" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.TestRunner.TestngTestRunnerTest@909217e]" started-at="2023-05-04T12:57:22 IST" name="tearDownClass" finished-at="2023-05-04T12:57:22 IST" duration-ms="904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

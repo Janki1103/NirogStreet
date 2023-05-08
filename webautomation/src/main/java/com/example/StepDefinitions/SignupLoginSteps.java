@@ -491,7 +491,7 @@ public void user_should_be_able_to_click_on_i_already_have_an_account() throws T
 @Given("^User should be able to enter the number(.+) mobile number$")
 public void user_should_be_able_to_enter_the_number_mobile_number(String mobilenumber) throws Throwable {
     Loginwithotp loginwithotp = testContextSetup.pageObjectManager.getLoginwithotp();
-    loginwithotp.enterMobileInput("7980598251");
+    loginwithotp.enterMobileInput(mobilenumber);
 }
 @Given("^User should be able to click the get otp (.+) (.+) (.+) (.+)$")
 public void user_should_be_able_to_click_the_get_otp(String otpone, String otptwo, String otpthree, String otpfour) throws Throwable {

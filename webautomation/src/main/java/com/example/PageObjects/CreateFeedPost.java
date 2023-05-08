@@ -43,6 +43,7 @@ public CreateFeedPost() throws IOException {
    }
 public void clickoncreatepostbutton(){
     wait(3000);
+    verifyVisibility(locators.getKey("FeedTitle"));
     verifyVisibility(locators.getKey("Create_Post"));
     clickOnElement(locators.getKey("Create_Post"));
     log.info("STEP:Click on post button Successfully" + "Create_Post");

@@ -27,7 +27,6 @@ Feature: Feed Post
       | MobileNumber | OtpOne | OtpTwo | OtpThree | OtpFour | AddHeading           | Description                               | TagToastMessage                                          | mobilenumber | Password | postsearchname | CommentOnPost                 | postsearchnamewhichiscreatedabove | ReplyOnPost     | Descriptionwithvideo         | Descriptionchange | PostUpdateSuccussfullmessage | TagToastMessageverify                                    | maximumtagmessage             |
       |   7980598251 |      1 |      2 |        3 |       4 | this is header added | This is for Testing Automation test cases | You need to add at least 1 tag, you can add upto 5 tags. |   7980598251 | abc@123  | Unique name    | Comment By automation testing | Testing Automation with videoo    | Goodpostonreply | https://youtu.be/aRLvnc7TGdw | Edittednew        | Post updated successfully !! | You need to add at least 1 tag, you can add upto 5 tags. | You can add only upto 5 tags. |
 
-  @Run
   Scenario Outline: Process to like ,Comment , Bookmark and follow actions for the post (Login into application from login with password page with another user)
     Given User should be able to click on signup icon and verify the user is on signup page
     When User clicks on I already have an account
@@ -150,6 +149,7 @@ Feature: Feed Post
       | MobileNumber | OtpOne | OtpTwo | OtpThree | OtpFour | AddHeading                    | Description                                                    | TagToastMessage                                          | mobilenumber | Password | postsearchname | CommentOnPost                 | postsearchnamewhichiscreatedabove | ReplyOnPost     | Descriptionwithvideo         | Descriptionchange | PostUpdateSuccussfullmessage |
       |   7980598251 |      1 |      2 |        3 |       4 | Testing Automation for saving | This is for Testing Automation for saving the images and video | You need to add at least 1 tag, you can add upto 5 tags. |   7980598251 | abc@123  | Unique name    | Comment By automation testing | Testing Automation for saving     | Goodpostonreply | https://youtu.be/aRLvnc7TGdw | Edittednew        | Post updated successfully !! |
 
+  @Run
   Scenario Outline: Youtube video post in feed
     Given User should be able to click on signup icon and verify the user is on signup page
     When User clicks on I already have an account

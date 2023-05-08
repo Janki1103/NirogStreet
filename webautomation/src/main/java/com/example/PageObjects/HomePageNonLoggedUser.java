@@ -121,6 +121,7 @@ public void clickOnQuizQuicklink(){
     clickOnElement(locators.getKey("AllMedicines_header"));
  }
  public void clickongetthepricepatened(){
+    wait(3000);
     verifyVisibility(locators.getKey("GetTheBestPriceButton"));
     clickOnElement(locators.getKey("GetTheBestPriceButton"));
  }

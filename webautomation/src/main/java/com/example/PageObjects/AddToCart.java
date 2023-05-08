@@ -390,8 +390,10 @@ public AddToCart() throws IOException {
     public void clickonProceedToCartforCoupon(){
         // clickOnElement(locators.getKey("my_cart_proceed_button"));
          log.info("STEP: click on proceed button Successfully" + "my_cart_proceed_button");
+         wait(1000); 
          scrollDown();
          scrollDown();
+         wait(1000); 
          scrollDown();
          verifyVisibility(locators.getKey("proceed_button"));
          clickOnElement(locators.getKey("proceed_button"));
@@ -555,8 +557,9 @@ public AddToCart() throws IOException {
     public void verifyConfirmMessage(String actualMessage){
         clickOnElement(locators.getKey("ConfirmOrder_Button"));
         log.info("STEP:Click on confirm button Successfully" + "ConfirmOrder_Button");
-        verifyVisibility(locators.getKey("loader"));
-        verifyInvisibility(locators.getKey("loader"));
+        // verifyVisibility(locators.getKey("loader"));
+        // verifyInvisibility(locators.getKey("loader"));
+        verifyPageLoader(locators.getKey("loader"));
         verifyText(locators.getKey("Confirm_message"), actualMessage);
         log.info("STEP:Confirm order message verified  Successfully" + "Confirm_message");
     }

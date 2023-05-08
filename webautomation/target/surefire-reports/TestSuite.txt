@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 155.675 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 172.725 s <<< FAILURE! - in TestSuite
+com.example.TestRunner.TestngTestRunnerTest.runScenario["Verify Coupon in the cart", "Optional[Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny and Coupon verfication in the cart]"](1)  Time elapsed: 169.772 s  <<< FAILURE!
+java.lang.AssertionError: expected [The applied coupon is only valid for a minimum value of 500 for brand(s) 1Veda.] but found [Coupon Applied]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.example.Utilities.GenericUtils.verifyText(GenericUtils.java:711)
+	at com.example.PageObjects.AddToCart.VerifyCouponInvaliMessage(AddToCart.java:480)
+	at com.example.StepDefinitions.EcomSteps.user_search_coupon_as_and_click_on_apply_coupon_and_verify_coupon_message_as(EcomSteps.java:194)
+	at ✽.User search coupon as AUTOMATIONCOUPON and click on apply coupon and verify coupon message as The applied coupon is only valid for a minimum value of 500 for brand(s) 1Veda.(classpath:feature/04Ecom.feature:127)
+

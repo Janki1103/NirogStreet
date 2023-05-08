@@ -117,7 +117,8 @@ public DoctorMyProfileAddDetails() throws IOException {
     public void clickOnProceedButton(String MobileNumberChangeSuccessfullMessage){
         wait(1000);
         clickOnElement(locators.getKey("MobileOTProceedButton"));
-        wait(2000);
+        // wait(2000);
+        verifyVisibility(locators.getKey("MobileNUmberChangeSuccessfullMessage"));
         verifyText(locators.getKey("MobileNUmberChangeSuccessfullMessage"), MobileNumberChangeSuccessfullMessage);
         wait(5000);
     }

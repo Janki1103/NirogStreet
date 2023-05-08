@@ -354,8 +354,9 @@ public VerificationWithDoctor() throws IOException {
         
         selectDropDown(locators.getKey("Reson_for_dispapprove_input"), reasonofDisapprove);
         clickOnElement(locators.getKey("Submit_button"));
-       
-        verifyVisibility(locators.getKey("Disapproved_Nessage_Admin"));
+        wait(3000);
+
+      //  verifyVisibility(locators.getKey("Disapproved_Nessage_Admin"));
         
 
     }

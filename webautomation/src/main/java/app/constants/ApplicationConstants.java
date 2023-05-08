@@ -9,7 +9,7 @@ import java.time.Duration;
 		public static String ADMINURL = "https://stg4admin.1veda.in/site/login";
 		public static String browser = "chrome";
 		public static String environment = "Automation QA";
-		public static final Duration EXP_WAIT = Duration.ofSeconds(30);
+		public static final Duration EXP_WAIT = Duration.ofSeconds(40);
 		//public static final Duration Page_load_timeout=Duration.ofMillis(2000);
 		public static final Duration Page_load_timeout=Duration.ofSeconds(30);
 

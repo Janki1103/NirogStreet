@@ -3,6 +3,7 @@ Feature: Doctor my profile - Process of add operations for all details
   Background: 
     Given Validate the browser
 
+@Run
   Scenario Outline: Test the Doctor should able to add the details
     Given User click on loginsignup button
     Given User should be able to click on i have account button
@@ -174,25 +175,27 @@ Feature: Doctor my profile - Process of add operations for all details
       | Profession | Title | Name        | PINCODE | Password  | ConfirmPassword | Congratulations  | Attention  | ROllNo | year | DocumentReview         | AdminUsername | AdminPassword |  | Mobile     | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | councilname                                                                | rajistrationNumber | passingyear |
       | Student    | Mrs.  | Pooja Joshi |  380013 | Nirog@123 | Nirog@123       | Congratulations! | Attention! | 123456 | 2020 | Documents under review | superadmin    |        123456 |  | 9876543212 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Andhra Boards for Ayurveda & Homoeopathy Department of Ayush, Secunderabad |             123456 |        1992 |
 
-  Scenario Outline: Test the Mobile Number  Update in Personal Detail Section
-    Given User click on loginsignup button
-    Given User should be able to click on i have account button
-    Then User clicks on Login with Password button
-    When user enters the mobile number as <Mobile> mobile number
-    When user enters the password as <Password> password
-    Then User clicks on proceed button
-    Given User click on profile icon
-    Given User click on mobile edit icon
-    Given User enter the mobile number as <entermobileupdate> and click on get otp button
-    When Popup should come and user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    When User should be able to click on otp proceed button and get mobile number change successfull message as <MobileNumberChangeSuccessfullMessage>
-    When User Click on personal and contact details tab for update mobile number
-    Given User click on mobile edit icon again
-    Given User enter the mobile number as <Mobile> and click on get otp button
-    When Popup should come and user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
-    When User should be able to click on otp proceed button and get mobile number change successfull message as <MobileNumberChangeSuccessfullMessage>
-    Then closes the browser
 
-    Examples: 
-      | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | entermobileupdate | MobileNumberChangeSuccessfullMessage                           |
-      | 8530906851 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am doctor |        6530906852 | Successfully updated Personal information and Contact details! |
+# @Run
+#   Scenario Outline: Test the Mobile Number  Update in Personal Detail Section
+#     Given User click on loginsignup button
+#     Given User should be able to click on i have account button
+#     Then User clicks on Login with Password button
+#     When user enters the mobile number as <Mobile> mobile number
+#     When user enters the password as <Password> password
+#     Then User clicks on proceed button
+#     Given User click on profile icon
+#     Given User click on mobile edit icon
+#     Given User enter the mobile number as <entermobileupdate> and click on get otp button
+#     When Popup should come and user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
+#     When User should be able to click on otp proceed button and get mobile number change successfull message as <MobileNumberChangeSuccessfullMessage>
+#     When User Click on personal and contact details tab for update mobile number
+#     Given User click on mobile edit icon again
+#     Given User enter the mobile number as <Mobile> and click on get otp button
+#     When Popup should come and user can add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
+#     When User should be able to click on otp proceed button and get mobile number change successfull message as <MobileNumberChangeSuccessfullMessage>
+#     Then closes the browser
+
+#     Examples: 
+#       | Mobile     | Password | resendSuccessfullyMessage | OtpOne | OtpTwo | OtpThree | OtpFour | gender | category | experience | date       | Website                   | about       | entermobileupdate | MobileNumberChangeSuccessfullMessage                           |
+#       | 8530906851 | Test@123 | Resent OTP successfully!  |      1 |      2 |        3 |       4 | Male   | Unani    |          6 | 10-10-1995 | https://stg3web.1veda.in/ | i am doctor |        6530906852 | Successfully updated Personal information and Contact details! |

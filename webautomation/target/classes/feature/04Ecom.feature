@@ -61,7 +61,7 @@ Feature: Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny an
       | mobile     | OtpOne | OtpTwo | OtpThree | OtpFour | brand | Quantity | FullName    | mobileNumber | AlternativeNumber | Address         | landmark                 | pincode | AddToCartSuccessMessage    | productName | updateQty | PaymentOtpOne | PaymentOtpTwo | PaymentOtpThree | PaymentOtpFour | SuccessMessageOfConfirm | GSTNumber       | LegalEntity                        |
       | 8530906851 |      1 |      2 |        3 |       4 | 1Veda |        1 | Janki Bhatt |   8530906851 |        9974580345 | 12/141,jamnagar | Vedant School of Science |  560068 | Successfully added to cart | Giloy Juice |         5 |             1 |             2 |               3 |              4 | Order Confirmed         | 29AABCU9603R2ZI | UJJIVAN SMALL FINANCE BANK LIMITED |
 
-@Run
+
   Scenario Outline: Verify ecom flow with Changing default shipping address
     Given User should be logged in with <mobile> as a mobile number and add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
     When User verify the cart
@@ -114,7 +114,7 @@ Feature: Verify Add To Cart Flow With Pay On Delivery Option with Nirog Moeny an
   #     | mobile     | OtpOne | OtpTwo | OtpThree | OtpFour | brand | Quantity | FullName    | mobileNumber | AlternativeNumber | Address         | landmark                 | pincode | AddToCartSuccessMessage    | productName | updateQty | PaymentOtpOne | PaymentOtpTwo | PaymentOtpThree | PaymentOtpFour | SuccessMessageOfConfirm | GSTNumber       | LegalEntity                        | diffrentstatepincode |
   #     | 8530906851 |      1 |      2 |        3 |       4 | 1Veda |        1 | Janki Bhatt |   8530906851 |        9974580345 | 12/141,jamnagar | Vedant School of Science |  560068 | Successfully added to cart | Giloy Juice |         5 |             1 |             2 |               3 |              4 | Order Confirmed         | 29AABCU9603R2ZI | UJJIVAN SMALL FINANCE BANK LIMITED |               560069 |
 
-
+@Run
   Scenario Outline: Verify Coupon in the cart
     Given User should be logged in with <mobile> as a mobile number and add OTP As <OtpOne> <OtpTwo> <OtpThree> <OtpFour>
     When User verify the cart

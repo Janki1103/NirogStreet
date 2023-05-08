@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 		//  features ="classpath:feature/03ProfileVerification.feature",
 		// features ="classpath:feature/04Ecom.feature",
 		// features ="classpath:feature/05MyOrder.feature",
-		// features ="classpath:feature/06CreateFeedPost.feature",
+		// features ="classpath:feature/06Feed.feature",
 		// features ="classpath:feature/APIAutomation.feature",
  
 glue="com.example.StepDefinitions",

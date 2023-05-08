@@ -43,6 +43,8 @@ public MyOrder() throws IOException {
   
       public void searchOrder(){
         wait(6000);
+       // verifyVisibility(locators.getKey("ActiveOrderTab"));
+
         verifyVisibility(locators.getKey("Order_Search_Icon"));
           clickOnElement(locators.getKey("Order_Search_Icon"));
          

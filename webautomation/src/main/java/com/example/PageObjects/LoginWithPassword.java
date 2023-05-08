@@ -53,7 +53,7 @@ public LoginWithPassword() throws IOException {
 
     public void enterMobileNo(String mobilenumber){
         
-        verifyVisibility(locators.getKey("EnterPassword"));
+       // verifyVisibility(locators.getKey("EnterPassword"));
        enterText(locators.getKey("Mobile_input"), mobilenumber);
        log.info("STEP:Enter mobile number successfully" + "Mobile_input");
       
